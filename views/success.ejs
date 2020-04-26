@@ -1,0 +1,38 @@
+<%- include("start") -%>
+
+<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			<center><h1 style="font-family: 'Josefin Sans', sans-serif;font-size:40px;padding-bottom:20px;"><u><i> Topics Available Currently:-</i></u></h1></center>
+
+
+<% for(var i=0;i<arr.length;i++){%>
+	<article id="post-389919" class="post-389919 post type-post status-publish format-standard sticky hentry category-guestblogs tag-gfg-update">
+
+
+			<h2 class="entry-title"><center>
+				<a href="#"
+				rel="bookmark" style="color:blue;font-size:20px"><%= arr[i] %></a>
+</center>
+			</h2>
+
+
+		<!-- <div class="entry-summary">
+
+			<p> History of Evolution of DBMS and advantages over traditional file system,Three-schema architecture of DBMS and Data Independence. Introduction ...
+			<span class="read-more"><a href="syllabus.pdf" target="_blank">Detailed syllabus »</a></span></p>
+		</div><!-- .entry-summary -->
+
+
+	</article>
+<%}%>
+
+
+
+
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+    <%- include("end") -%>

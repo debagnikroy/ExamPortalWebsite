@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Result</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="icon/fav.ico" sizes="32x32">
+    <link rel="icon" href="icon/fav.ico" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="icon/fav.ico.png">
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+        body
+{
+    background: #ff4f4f;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.bubbles
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: :100%;
+    height: 100%;
+}
+
+.bubbles li
+{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,.2);
+    animation: animate 25s linear infinite;
+    bottom: -800px;
+}
+
+.bubbles li:nth-child(1)
+{
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0;
+}
+
+.bubbles li:nth-child(2)
+{
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+
+.bubbles li:nth-child(3)
+{
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.bubbles li:nth-child(4)
+{
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.bubbles li:nth-child(5)
+{
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.bubbles li:nth-child(6)
+{
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.bubbles li:nth-child(7)
+{
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.bubbles li:nth-child(8)
+{
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+
+.bubbles li:nth-child(9)
+{
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+
+.bubbles li:nth-child(10)
+{
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.main{
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+      100%
+    {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+    </style>
+    <style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #222831;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+<div class="main" style="padding-top:80px">
+
+  <h3> Your test is complete! </h3>
+  <br/><br/>
+  <h4>You scored</h4> <h2> <%= count %> </h2>
+  		<h4>out of</h4>
+    <h2> <%= total %> </h2>
+    <br/><br/>
+    <a href='/answerKey'><button class="button" style="vertical-align:middle"><span>Answer Key </span></button></a>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    Thank you<br/>
+    eXam Portal<br/>
+   a JU initiative &copy; The Web Brewery 2020
+</div>
+
+<div class="container">
+
+
+	<div class="row">
+
+
+		<div class="col-md-12">
+
+                <ul class="bubbles">
+
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                </ul>
+
+            </div>
+
+
+	</div>
+</div>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

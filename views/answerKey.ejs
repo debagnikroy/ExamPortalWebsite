@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Answer Key</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="icon/fav.ico" sizes="32x32">
+    <link rel="icon" href="icon/fav.ico" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="icon/fav.ico.png">
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+        body
+{
+    background: #ff4f4f;
+
+
+}
+
+.main{
+  text-align: left;
+  font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #222831;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+<div class="main" style="padding-top:80px;padding-left:10px">
+
+<center>
+  <h1><u> Answer Keys:- </u> </h1>
+  <br/>
+  </center>
+  <br/><br/>
+  <% for(var i=0;i< arr.length;i++){ %>
+    <h3>Question <%- (i+1) %> :- <%- arr[i].question %></h3>
+      <h4> a -> <%- arr[i].optionA %></h4>
+      <h4> b -> <%- arr[i].optionB %></h4>
+      <h4> c -> <%- arr[i].optionC %></h4>
+      <h4> d -> <%- arr[i].optionD %></h4>
+      <br/>
+    <h3>Answer:-
+
+      <% if (arr[i].correctAnswer == 'a'){ %>
+        <h4> a -> <%- arr[i].optionA %></h4>
+      <%}%>
+      <% if (arr[i].correctAnswer == 'b'){ %>
+        <h4> b -> <%- arr[i].optionB %></h4>
+        <%}%>
+      <% if (arr[i].correctAnswer == 'c'){ %>
+        <h4> c -> <%- arr[i].optionC %></h4>
+        <%}%>
+      <% if (arr[i].correctAnswer == 'd'){ %>
+        <h4> d -> <%- arr[i].optionD %></h4>
+<%}%>
+
+      <br/><br/><br/>
+
+  <%} %>
+<center>
+  <a href='/success' style="font-family: 'Josefin Sans', sans-serif;color:#dae1e7;padding-bottom:30px;font-size:20px;">go to Home Page</a>
+</center>
+  </div>
+
+<footer style="padding-top:15px;text-align:center;background:#222831;color:white;font-family: 'Josefin Sans', sans-serif;">
+  Thank you<br/>
+  eXam Portal<br/>
+ a JU initiative &copy; The Web Brewery 2020
+</footer>
+
+
+
+</body>
+</html>

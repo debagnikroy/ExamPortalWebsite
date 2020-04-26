@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+  <title>eXam Portal</title>
+
+  <link rel="icon" href="icon/fav.ico" sizes="32x32">
+  <link rel="icon" href="icon/fav.ico" sizes="192x192">
+  <link rel="apple-touch-icon-precomposed" href="icon/fav.ico.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
+    @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+    #playground-container {
+      height: 500px;
+      overflow: hidden !important;
+
+    }
+
+    .main {
+      margin-top: 70px;
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+      padding: 0px;
+    }
+
+    .fb:focus,
+    .fb:hover {
+      color: FFF !important;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .left-side {
+      padding: 0px 0px 100px;
+      background: #9100ff;
+      background-size: cover;
+    }
+
+    .left-side h1 {
+      font-size: 70px;
+      font-weight: 900;
+      color: #FFF;
+      padding: 50px 10px 00px 26px;
+    }
+
+    .left-side p {
+      font-weight: 600;
+      color: #FFF;
+      padding: 10px 10px 10px 26px;
+    }
+
+
+    .fb {
+      background: #2d6bb7;
+      color: #FFF;
+      padding: 10px 15px;
+      border-radius: 18px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 15px;
+      margin-left: 26px;
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+    }
+
+    .tw {
+      background: #20c1ed;
+      color: #FFF;
+      padding: 10px 15px;
+      border-radius: 18px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 15px;
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+    }
+
+    .right-side {
+      padding: 30px 0px 100px;
+      background: #FFF;
+      background-size: cover;
+      min-height: 514px;
+    }
+
+    .right-side h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #000;
+      padding: 50px 10px 00px 50px;
+    }
+
+    .right-side p {
+      font-weight: 600;
+      color: #000;
+      padding: 10px 50px 10px 50px;
+    }
+
+    .form {
+      padding: 10px 50px 10px 50px;
+    }
+
+    .form-control {
+      box-shadow: none !important;
+      border-radius: 0px !important;
+      border-bottom: 1px solid #9100ff !important;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+    }
+
+    .btn-deep-purple {
+      background: #84d14e;
+      border-radius: 18px;
+      padding: 5px 19px;
+      color: #FFF;
+      font-weight: 600;
+      float: right;
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.24);
+    }
+  </style>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Website CSS style -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext,vietnamese" rel="stylesheet">
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext" rel="stylesheet">
+
+    <title>eXam Portal</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="col-sm-8 col-sm-offset-2 main">
+        <div class="col-sm-6 left-side">
+          <center>
+            <h1 style="font-family: 'Josefin Sans', sans-serif;">eXam<br>Portal</h1>
+            <br /><br />
+            <p style="font-family: 'Josefin Sans', sans-serif;font-size:15px;">"Practise makes a man perfect, over practise makes a person dull"</p>
+            <br>
+            <p></p>
+            <p>Not a member?</p>
+            <a class="fb" href="/" target="_blank">Register Here</a>
+
+
+
+        </div>
+        <!--col-sm-6-->
+
+        <div class="col-sm-6 right-side">
+          <h1>Login</h1>
+          <br />
+
+          <!--Form with header-->
+          <form action="/login" method="post">
+            <div class="form">
+
+
+              <div class="form-group">
+                <label style="font-family: 'Josefin Sans', sans-serif;font-size:15px;" for="form2">Your email</label>
+                <input id="form2" class="form-control" type="email" name="email" placeholder="Email">
+
+              </div>
+
+              <div class="form-group">
+                <label style="font-family: 'Josefin Sans', sans-serif;font-size:15px;" for="form4">Your password</label>
+                <input type="password" id="form4" class="form-control" type="password" name="password" placeholder="Password">
+
+              </div>
+
+
+
+
+
+              <div class="text-xs-center">
+                <input type="submit" class="btn btn-deep-purple" value="Login">
+              </div>
+
+
+            </div>
+          </form>
+          <!--/Form with header-->
+
+        </div>
+        <!--col-sm-6-->
+
+
+      </div>
+      <!--col-sm-8-->
+
+    </div>
+    <!--container-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+  </body>
+
+  </html>
+  <script type="text/javascript">
+
+  </script>
+</body>
+
+</html>
