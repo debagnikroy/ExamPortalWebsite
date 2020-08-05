@@ -1,12 +1,11 @@
 # Node Passport Authentication
 
-## [Tutorial](https://youtu.be/vkIltwAySrk)
 
 ## 1. USAGE
 `````
         # Use your Own URI To Connect To Database
-    $ npm install
-    $ npm run dev
+                 $ npm install
+                 $ npm run dev
 
         # Visit http://localhost:3000
 `````
